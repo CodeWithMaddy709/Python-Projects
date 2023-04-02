@@ -1,0 +1,317 @@
+from tkinter import *
+import tkinter as tk
+import tkinter.font as font
+from PIL import Image,ImageTk
+
+
+
+
+root = Tk()
+root.geometry('1200x600')
+root.configure(bg='#00bfff')
+
+
+
+#variables
+
+buttonFont = font.Font(family='Helvetica', size=10, weight='bold')
+labelFont  =  font.Font(family='Helvetica', size=14, weight='bold')
+heading_font = font.Font(family='Helvetica', size=14, weight='bold')
+heading_font_2 = font.Font(family='Helvetica', size=10, weight='bold')
+
+image_1 = Image.open("warehouse130.png")
+photo_1 = ImageTk.PhotoImage(image_1 )
+image_2 = Image.open("shop1330.png")
+photo_2= ImageTk.PhotoImage(image_2)
+image_3 = Image.open("lense.png")
+photo_3= ImageTk.PhotoImage(image_3)
+image_4 = Image.open("lense.png")
+photo_4= ImageTk.PhotoImage(image_4)
+image_5 = Image.open("ledger.png")
+photo_5= ImageTk.PhotoImage(image_5)
+image_6 = Image.open("diary.png")
+photo_6= ImageTk.PhotoImage(image_6)
+image_7 = Image.open("counter.png")
+photo_7= ImageTk.PhotoImage(image_7)
+image_8 = Image.open("billing.png")
+photo_8 = ImageTk.PhotoImage(image_8 )
+image_9 = Image.open("ledgerd.png")
+photo_9 = ImageTk.PhotoImage(image_9 )
+image_10 = Image.open("product.png")
+photo_10 = ImageTk.PhotoImage(image_10 )
+
+# functions 
+def show_Dashboard():
+    cf_2.pack(side='top' , anchor="n" , pady=20)
+    centerframe_2.pack_propagate(0)
+    cf_3.pack(side='top' , anchor="n" , padx=0)
+    centerframe_3.pack_propagate(0)
+    chk_shop.pack_forget()
+    chk_shop.pack_forget()
+def show_shop():
+    cf_2.pack_forget()
+    cf_3.pack_forget()
+    chk_shop.pack()
+def ledgr():
+    cf_2.pack_forget()
+    cf_3.pack_forget()
+    chk_shop.pack()
+    
+# left frame
+lframe = Frame(root,width=200, height= 800, bg="#87cefa", highlightthickness=0 , highlightbackground="white")
+lframe.pack(side='left' , anchor="n")
+lframe.pack_propagate(0)
+
+f_1 = Frame(lframe, highlightbackground="#00bfff", bg="#87cefa" , highlightthickness=1 , width=200, height= 50)
+f_1.pack(  anchor="nw")
+f_1.pack_propagate(0)
+btnf_1 =Button(f_1, bd=0 ,text='ADD TO STOCK'  , bg='#87cefa', fg='white'  , font=buttonFont,  width=190, height= 4)
+btnf_1.pack( pady= 0,anchor="n")
+
+f_2 = Frame(lframe, highlightbackground="#00bfff", bg="#87cefa" , highlightthickness=1, width=200, height= 50)
+f_2.pack(  anchor="nw")
+f_2.pack_propagate(0)
+btnf_2 =Button(f_2, bd=0 ,text='ADD TO SHOP'  , bg='#87cefa', fg='white'  , font=buttonFont,  width=190, height= 4 )
+btnf_2.pack( pady= 0,anchor="n")
+
+f_3 = Frame(lframe, highlightbackground="#00bfff", bg="#87cefa" , highlightthickness=1, width=200, height= 50)
+f_3.pack(  anchor="nw")
+f_3.pack_propagate(0)
+btnf_3 =Button(f_3, bd=0 ,text='CHECK SHOP'  , bg='#87cefa', fg='white'  , font=buttonFont,  width=190, height= 4 , command=show_shop)
+btnf_3.pack( pady= 0,anchor="n")
+
+
+f_4 = Frame(lframe, highlightbackground="#00bfff", bg="#87cefa" , highlightthickness=1 , width=200, height= 50)
+f_4 .pack(  anchor="nw")
+f_4 .pack_propagate(0)
+btnf_4 =Button(f_4, bd=0 ,text='CHECK STOCK'  , bg='#87cefa', fg='white'  , font=buttonFont,  width=190, height= 4)
+btnf_4.pack( pady= 0,anchor="n")
+
+
+f_5  = Frame(lframe, highlightbackground="#00bfff", bg="#87cefa" , highlightthickness=1 , width=200, height= 50)
+f_5 .pack(  anchor="nw")
+f_5 .pack_propagate(0)
+btnf_5 =Button(f_5, bd=0 ,text='LEGDER'  , bg='#87cefa', fg='white'  , font=buttonFont,  width=190, height= 4)
+btnf_5.pack( pady= 0,anchor="n")
+
+f_6 = Frame(lframe, highlightbackground="#00bfff", bg="#87cefa" , highlightthickness=1, width=200, height= 50)
+f_6 .pack(  anchor="nw")
+f_6 .pack_propagate(0)
+btnf_6 =Button(f_6, bd=0 ,text='DIARY'  , bg='#87cefa', fg='white'  , font=buttonFont,  width=190, height= 4)
+btnf_6.pack( pady= 0,anchor="n")
+
+
+f_7  = Frame(lframe, highlightbackground="#00bfff", bg="#87cefa" , highlightthickness=1 , width=200, height= 50)
+f_7.pack(  anchor="nw")
+f_7.pack_propagate(0)
+btnf_7 =Button(f_7, bd=0 ,text='COUNTER'  , bg='#87cefa', fg='white'  , font=buttonFont,  width=190, height= 4)
+btnf_7.pack( pady= 0,anchor="n")
+
+f_8 = Frame(lframe, highlightbackground="#00bfff", bg="#87cefa" , highlightthickness=1 , width=200, height= 50)
+f_8 .pack(  anchor="nw")
+f_8 .pack_propagate(0)
+btnf_8 =Button(f_8, bd=0 ,text='BILLING'  , bg='#87cefa', fg='white'  , font=buttonFont,  width=190, height= 4 , highlightbackground="#00bfff", highlightthickness=1)
+btnf_8.pack( pady= 0,anchor="n")
+
+f_9 = Frame(lframe, highlightbackground="#00bfff", bg="#87cefa" , highlightthickness=1 , width=200, height= 50)
+f_9 .pack(  pady= 80, anchor="nw")
+f_9 .pack_propagate(0)
+btnf_9 =Button(f_9, bd=0 ,text='DASHBOARD'  , bg='#87cefa', fg='white'  , font=buttonFont,  width=190, height= 4 , highlightbackground="#00bfff", highlightthickness=1 , command= show_Dashboard)
+btnf_9.pack( pady= 0,anchor="n")
+
+# Center  frames 
+centerframe_1  = Frame(root,width=1200, height= 110, bg="#00bfff" , highlightthickness=1 , highlightbackground="#89CFF0")
+centerframe_1.pack(side='top' , anchor="n" , pady=0)
+centerframe_1.pack_propagate(0)
+label = Label( centerframe_1, text = "DASHBOARD ACTIONS", relief=RAISED , bg= '#00bfff' , bd=0 , font=heading_font , fg='white' )
+label.pack(side='top' , anchor="nw" , pady=45, padx=20 )
+
+cf_2 = centerframe_2  = Frame(root,width=1200, height= 250, bg="#00bfff")
+centerframe_2.pack(side='top' , anchor="n" , pady=20)
+centerframe_2.pack_propagate(0)
+
+cf2_f1 = Frame(centerframe_2,width=250, height= 400, bg="#89CFF0")
+cf2_f1.pack(side='left' , anchor="n" , padx=18)
+cf2_f1.pack_propagate(0)
+label = Label( cf2_f1, text = "ADD TO STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label( cf2_f1,  image= photo_1 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf2_f1,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1)
+buton.pack( pady= 0,anchor="n")
+
+cf2_f2 = Frame(centerframe_2,width=250, height= 400, bg="#89CFF0")
+cf2_f2.pack(side='left' , anchor="n" , padx=18)
+cf2_f2.pack_propagate(0)
+label = Label( cf2_f2, text = "ADD TO STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label( cf2_f2,  image= photo_2 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf2_f2 ,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1)
+buton.pack( pady= 0,anchor="n")
+
+cf2_f3 = Frame(centerframe_2,width=250, height= 400, bg="#89CFF0")
+cf2_f3.pack(side='left' , anchor="n" , padx=18)
+cf2_f3.pack_propagate(0)
+label = Label( cf2_f3, text = "ADD TO STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label( cf2_f3,  image= photo_3 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf2_f3 ,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1)
+buton.pack( pady= 0,anchor="n")
+
+
+cf2_f4 = Frame(centerframe_2,width=250, height= 400, bg="#89CFF0")
+cf2_f4.pack(side='left' , anchor="n" ,padx=18)
+cf2_f4.pack_propagate(0)
+label = Label(cf2_f4, text = "ADD TO STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label( cf2_f4,  image= photo_4 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf2_f4 ,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1)
+buton.pack( pady= 0,anchor="n")
+
+cf_3  = centerframe_3  = Frame(root,width=1200, height= 250, bg="#00bfff")
+centerframe_3.pack(side='top' , anchor="n" , padx=0)
+centerframe_3.pack_propagate(0)
+cf3_f1 = Frame(centerframe_3,width=250, height= 400, bg="#89CFF0")
+cf3_f1.pack(side='left' , anchor="n" , padx=18)
+cf3_f1.pack_propagate(0)
+label = Label(cf3_f1, text = "ADD TO STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label(cf3_f1,  image= photo_5 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf3_f1  ,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1)
+buton.pack( pady= 0,anchor="n")
+
+cf3_f2 = Frame(centerframe_3,width=250, height= 400, bg="#89CFF0")
+cf3_f2.pack(side='left' , anchor="n" , padx=18)
+cf3_f2.pack_propagate(0)
+label = Label(cf3_f2, text = "ADD TO STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label(cf3_f2,  image= photo_6 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf3_f2  ,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1)
+buton.pack( pady= 0,anchor="n")
+
+cf3_f3 = Frame(centerframe_3,width=250, height= 400, bg="#89CFF0")
+cf3_f3.pack(side='left' , anchor="n" , padx=18)
+cf3_f3.pack_propagate(0)
+label = Label(cf3_f3, text = "ADD TO STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label(cf3_f3,  image= photo_7 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf3_f3   ,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1)
+buton.pack( pady= 0,anchor="n")
+
+cf3_f4 = Frame(centerframe_3,width=250, height= 400, bg="#89CFF0")
+cf3_f4.pack(side='left' , anchor="n" , padx=18)
+cf3_f4.pack_propagate(0)
+label = Label(cf3_f4, text = "ADD TO STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label(cf3_f4,  image= photo_8 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf3_f4 ,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1)
+buton.pack( pady= 0,anchor="n")
+
+
+#add to stock 
+
+ad_stock = add_stock = Frame(root,width=850, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+add_stock.pack(side='top' , anchor="n" , padx=0)
+add_stock.pack_propagate(0)
+imagelabel = Label(add_stock,  image= photo_9  , bg= '#89CFF0' )
+imagelabel.pack(side='top' , anchor="n" , pady=10, padx=20 )
+ad_stock.pack_forget()
+
+#check stock 
+
+chk_stock= check_stock = Frame(root,width=850, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_stock.pack(side='top' , anchor="n" , padx=0)
+check_stock.pack_propagate(0)
+imagelabel = Label(add_stock,  image= photo_9  , bg= '#89CFF0' )
+imagelabel.pack(side='top' , anchor="n" , pady=10, padx=20 )
+chk_stock.pack_forget()
+
+#add to shop
+
+ad_shop = add_shop = Frame(root,width=850, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+add_stock.pack(side='top' , anchor="n" , padx=0)
+add_stock.pack_propagate(0)
+imagelabel = Label(add_shop ,  image= photo_9  , bg= '#89CFF0' )
+imagelabel.pack(side='top' , anchor="n" , pady=10, padx=20 )
+ad_shop.pack_forget()
+
+
+
+#check shop 
+
+chk_shop = check_shop = Frame(root,width=850, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_shop.pack(side='top' , anchor="n" , padx=0)
+check_shop.pack_propagate(0)
+imagelabel = Label(check_shop,  image= photo_9  , bg= '#89CFF0' )
+imagelabel.pack(side='top' , anchor="n" , pady=10, padx=20 )
+chk_shop.pack_forget()
+
+#Ledger 
+
+chk_Ledger = check_Ledger = Frame(root,width=850, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_Ledger.pack(side='top' , anchor="n" , padx=0)
+check_Ledger.pack_propagate(0)
+imagelabel = Label(check_shop,  image= photo_9  , bg= '#89CFF0' )
+imagelabel.pack(side='top' , anchor="n" , pady=10, padx=20 )
+chk_Ledger .pack_forget()
+
+#Diary
+
+chk_Diary = check_Diary = Frame(root,width=850, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_Diary.pack(side='top' , anchor="n" , padx=0)
+check_Diary.pack_propagate(0)
+imagelabel = Label(check_shop,  image= photo_9  , bg= '#89CFF0' )
+imagelabel.pack(side='top' , anchor="n" , pady=10, padx=20 )
+chk_Diary.pack_forget()
+
+#counter
+
+chk_counter = check_counter = Frame(root,width=850, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_counter.pack(side='top' , anchor="n" , padx=0)
+check_counter.pack_propagate(0)
+imagelabel = Label(check_shop,  image= photo_9  , bg= '#89CFF0' )
+imagelabel.pack(side='top' , anchor="n" , pady=10, padx=20 )
+chk_counter.pack_forget()
+
+#Billing
+
+chk_Billing = check_Billing = Frame(root,width=850, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_Billing.pack(side='top' , anchor="n" , padx=0)
+check_Billing.pack_propagate(0)
+imagelabel = Label(check_shop,  image= photo_9  , bg= '#89CFF0' )
+imagelabel.pack(side='top' , anchor="n" , pady=10, padx=20 )
+chk_Billing.pack_forget()
+
+class Window(Frame):
+    def __init__(self, master=None):
+        Frame.__init__(self, master)
+        self.master = master
+
+        menu = Menu(self.master)
+        self.master.config(menu=menu)
+
+        fileMenu = Menu(menu)
+        fileMenu.add_command(label="Item")
+        fileMenu.add_command(label="Exit", command=self.exitProgram)
+        menu.add_cascade(label="File", menu=fileMenu)
+
+        editMenu = Menu(menu)
+        editMenu.add_command(label="Undo")
+        editMenu.add_command(label="Redo")
+        menu.add_cascade(label="Edit", menu=editMenu)
+
+    def exitProgram(self):
+        exit()
+        
+
+
+app = Window(root)
+
+root.mainloop()

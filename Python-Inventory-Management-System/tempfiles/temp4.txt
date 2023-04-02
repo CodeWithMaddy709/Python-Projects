@@ -1,0 +1,1175 @@
+from tkinter import *
+import tkinter as tk
+import tkinter.font as font
+from PIL import Image,ImageTk
+
+
+
+
+root = Tk()
+root.geometry('1200x600')
+root.configure(bg='white')
+
+
+
+#variables
+
+buttonFont = font.Font(family='Helvetica', size=10, weight='bold')
+labelFont  =  font.Font(family='Helvetica', size=14, weight='bold')
+heading_font = font.Font(family='Helvetica', size=6, weight='bold')
+heading_font_2 = font.Font(family='Helvetica', size=12, weight='bold')
+label_Entry_font = font.Font(family='Helvetica', size=9, weight='bold')
+
+image_1 = Image.open("warehouse130.png")
+photo_1 = ImageTk.PhotoImage(image_1 )
+image_2 = Image.open("shop1330.png")
+photo_2= ImageTk.PhotoImage(image_2)
+image_3 = Image.open("lense.png")
+photo_3= ImageTk.PhotoImage(image_3)
+image_4 = Image.open("lense.png")
+photo_4= ImageTk.PhotoImage(image_4)
+image_5 = Image.open("ledger.png")
+photo_5= ImageTk.PhotoImage(image_5)
+image_6 = Image.open("diary.png")
+photo_6= ImageTk.PhotoImage(image_6)
+image_7 = Image.open("counter.png")
+photo_7= ImageTk.PhotoImage(image_7)
+image_8 = Image.open("billing.png")
+photo_8 = ImageTk.PhotoImage(image_8 )
+image_9 = Image.open("ledgerd.png")
+photo_9 = ImageTk.PhotoImage(image_9 )
+image_10 = Image.open("product.png")
+photo_10 = ImageTk.PhotoImage(image_10 )
+image_11 = Image.open("add_stock.JFIF")
+photo_11 = ImageTk.PhotoImage(image_11 )
+image_12 = Image.open("stock.jpg")
+photo_12 = ImageTk.PhotoImage(image_12 )
+image_13 = Image.open("ledr.jpg")
+photo_13 = ImageTk.PhotoImage(image_13 )
+image_14 = Image.open("diry.JFIF")
+photo_14 = ImageTk.PhotoImage(image_14 )
+image_15 = Image.open("conttr.jpg")
+photo_15 = ImageTk.PhotoImage(image_15 )
+image_16 = Image.open("bilng.jpg")
+photo_16 = ImageTk.PhotoImage(image_16 )
+image_17 = Image.open("product.png")
+photo_17 = ImageTk.PhotoImage(image_17 )
+image_18 = Image.open("product.png")
+photo_18 = ImageTk.PhotoImage(image_18 )
+image_19 = Image.open("product.png")
+photo_19 = ImageTk.PhotoImage(image_19 )
+image_20 = Image.open("product.png")
+photo_20 = ImageTk.PhotoImage(image_20 )
+
+
+# functions 
+
+def add_stock():
+  ad_stock.pack(side='top' , anchor="n" , padx=0)
+  ad_stock.pack_propagate(0)
+  check_stock.pack_forget()
+  add_shop.pack_forget()
+  check_shop.pack_forget()
+  check_Ledger.pack_forget()
+  check_Diary.pack_forget()
+  check_counter.pack_forget()
+  check_Billing.pack_forget()
+  cf_2.pack_forget()
+  cf_3.pack_forget()
+  print("hello")
+
+
+def add_to_shop():
+  ad_stock.pack_forget()
+  chk_stock.pack_forget()
+  add_shop.pack(side='top' , anchor="n" , padx=0)
+  add_shop.pack_propagate(0)
+  check_shop.pack_forget()
+  check_Ledger.pack_forget()
+  check_Diary.pack_forget()
+  check_counter.pack_forget()
+  check_Billing.pack_forget()
+  cf_2.pack_forget()
+  cf_3.pack_forget()
+  print("hello")
+
+def add_to_ledger():
+  pass
+
+
+
+def transfer_transctions():
+  pass
+
+
+def Customer_Details():
+  pass
+
+def check_shop():
+  add_stock.pack_forget()
+  check_stock.pack_forget()
+  add_shop.pack_forget()
+  check_shop.pack(side='top' , anchor="n" , padx=0)
+  check_Ledger.pack_forget()
+  check_Diary.pack_forget()
+  check_counter.pack_forget()
+  check_Billing.pack_forget()
+  cf_2.pack_forget()
+  cf_3.pack_forget()
+
+
+def check_stock():
+  ad_stock.pack_forget()
+  chk_stock.pack(side='top' , anchor="n" , padx=0)
+  chk_stock.pack_propagate(0)
+  add_shop.pack_forget()
+  check_shop.pack_forget()
+  check_Ledger.pack_forget()
+  check_Diary.pack_forget()
+  check_counter.pack_forget()
+  check_Billing.pack_forget()
+  cf_2.pack_forget()
+  cf_3.pack_forget()
+  
+
+def show_ledgr():
+  add_stock.pack_forget()
+  check_stock.pack_forget()
+  add_shop.pack_forget()
+  check_shop.pack_forget()
+  chk_Ledger.pack(side='top' , anchor="n" , padx=0)
+  check_Ledger.pack_propagate(0)
+  check_Diary.pack_forget()
+  check_counter.pack_forget()
+  check_Billing.pack_forget()
+  cf_2.pack_forget()
+  cf_3.pack_forget()
+
+def show_Diary():
+  add_stock.pack_forget()
+  check_stock.pack_forget()
+  add_shop.pack_forget()
+  check_shop.pack_forget()
+  check_Ledger.pack_forget()
+  chk_Diary.pack(side='top' , anchor="n" , padx=0)
+  chk_Diary.pack_propagate(0)
+  check_counter.pack_forget()
+  check_Billing.pack_forget()
+  cf_2.pack_forget()
+  cf_3.pack_forget()
+
+def show_counter():
+  add_stock.pack_forget()
+  check_stock.pack_forget()
+  add_shop.pack_forget()
+  check_shop.pack_forget()
+  check_Ledger.pack_forget()
+  check_Diary.pack_forget()
+  chk_counter.pack(side='top' , anchor="n" , padx=0)
+  chk_counter.pack_propagate(0) 
+  check_Billing.pack_forget()
+  cf_2.pack_forget()
+  cf_3.pack_forget()
+
+def show_Billing():
+  add_stock.pack_forget()
+  check_stock.pack_forget()
+  add_shop.pack_forget()
+  check_shop.pack_forget()
+  check_Ledger.pack_forget()
+  check_Diary.pack_forget()
+  check_counter.pack_forget()
+  chk_Billing.pack(side='top' , anchor="n" , padx=0)
+  chk_Billing.pack_propagate(0)
+  cf_2.pack_forget()
+  cf_3.pack_forget()
+
+
+'''def Show_Customer_details():
+  pass
+'''
+
+def show_Dashboard():
+  add_stock.pack_forget()
+  check_stock.pack_forget()
+  add_shop.pack_forget()
+  check_shop.pack_forget()
+  check_Ledger.pack_forget()
+  check_Diary.pack_forget()
+  check_counter.pack_forget()
+  check_Billing.pack_forget()
+  cf_2.pack(side='top' , anchor="n" , pady=20)
+  cf_2.pack_propagate(0)
+  cf_3.pack(side='top' , anchor="n" , padx=0)
+  cf_3.pack_propagate(0)
+
+
+# left frame
+lframe = Frame(root,width=200, height= 800, bg="black", highlightthickness=0 , highlightbackground="white")
+lframe.pack(side='left' , anchor="n")
+lframe.pack_propagate(0)
+
+f_1 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_1.pack(  anchor="nw")
+f_1.pack_propagate(0)
+btnf_1 =Button(f_1, bd=0 ,text='ADD TO STOCK'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , command = add_stock  )
+btnf_1.pack( pady= 0,anchor="n")
+
+f_2 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1, width=200, height= 50)
+f_2.pack(  anchor="nw")
+f_2.pack_propagate(0)
+btnf_2 =Button(f_2, bd=0 ,text='ADD TO SHOP'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , command = add_to_shop)
+btnf_2.pack( pady= 0,anchor="n")
+
+
+f_3 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1, width=200, height= 50)
+f_3.pack(  anchor="nw")
+f_3.pack_propagate(0)
+btnf_3 =Button(f_3, bd=0 ,text='ADD TO LEDGER'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , command = add_to_ledger)
+btnf_3.pack( pady= 0,anchor="n")
+
+
+f_4 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_4 .pack(  anchor="nw")
+f_4 .pack_propagate(0)
+btnf_4 =Button(f_4, bd=0 ,text='TRANSFER TRANSCITIONS'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , command =  add_to_Diary)
+btnf_4.pack( pady= 0,anchor="n")
+
+
+f_5  = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_5 .pack(  anchor="nw")
+f_5 .pack_propagate(0)
+btnf_5 =Button(f_5, bd=0 ,text='CUSTOMER DETAILS'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , command =  add_to_Diary)
+btnf_5.pack( pady= 0,anchor="n")
+
+f_6 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1, width=200, height= 50)
+f_6 .pack(  anchor="nw")
+f_6 .pack_propagate(0)
+btnf_6 =Button(f_6, bd=0 ,text='CHECK SHOP'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4)
+btnf_6.pack( pady= 0,anchor="n")
+
+
+f_7  = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_7.pack(  anchor="nw")
+f_7.pack_propagate(0)
+btnf_7 =Button(f_7, bd=0 ,text='CHECK STOCK'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 )
+btnf_7.pack( pady= 0,anchor="n")
+
+f_8 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_8 .pack(  anchor="nw")
+f_8 .pack_propagate(0)
+btnf_8 =Button(f_8, bd=0 ,text='CHECK LEDGER'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , highlightbackground="#00bfff", highlightthickness=1)
+btnf_8.pack( pady= 0,anchor="n")
+
+f_9 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_9.pack(  anchor="nw")
+f_9.pack_propagate(0)
+btnf_9 =Button(f_9, bd=0 ,text='CHECK DIARY'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , highlightbackground="#00bfff", highlightthickness=1 )
+btnf_9.pack( pady= 0,anchor="n")
+
+f_10 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_10.pack(  anchor="nw")
+f_10.pack_propagate(0)
+btnf_10 =Button(f_10, bd=0 ,text='COUNTER'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , highlightbackground="#00bfff", highlightthickness=1)
+btnf_10.pack( pady= 0,anchor="n")
+
+f_11 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_11.pack(  anchor="nw")
+f_11.pack_propagate(0)
+btnf_11 =Button(f_11, bd=0 ,text='BILLING'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , highlightbackground="#00bfff", highlightthickness=1 )
+btnf_11.pack( pady= 0,anchor="n")
+
+f_12 = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_12.pack(  anchor="nw")
+f_12 .pack_propagate(0)
+btnf_12 =Button(f_12, bd=0 ,text='Return Items'  , bg='black', fg='white'  , font=buttonFont,  width=190, height= 4 , highlightbackground="#00bfff", highlightthickness=1)
+btnf_12.pack( pady= 0,anchor="n")
+
+f_last = Frame(lframe, highlightbackground="#525050", bg="black" , highlightthickness=1 , width=200, height= 50)
+f_last.pack(  pady= 10, anchor="nw")
+f_last.pack_propagate(0)
+btnf_last =Button(f_last, bd=0 ,text='DASHBOARD'  , bg='green', fg='white'  , font=buttonFont,  width=190, height= 4 , highlightbackground="#00bfff", highlightthickness=1)
+btnf_last.pack( pady= 0,anchor="n")
+
+
+# Center  frames 
+centerframe_1  = Frame(root,width=1200, height= 60, bg="#00bfff" , highlightthickness=1 , highlightbackground="#89CFF0")
+centerframe_1.pack(side='top' , anchor="n" , pady=0)
+centerframe_1.pack_propagate(0)
+label = Label( centerframe_1, text = "DASHBOARD ACTIONS", relief=RAISED , bg= '#00bfff' , bd=0 , font=heading_font , fg='white' )
+label.pack(side='top' , anchor="nw" , pady=15, padx=20 )
+
+#centerframe 2
+
+cf_2 = centerframe_2  = Frame(root,width=1200, height= 250, bg="white")
+centerframe_2.pack(side='top' , anchor="n" , pady=20)
+centerframe_2.pack_propagate(0)
+
+
+cf2_f1 = Frame(centerframe_2,width=250, height= 400, bg="#89CFF0")
+cf2_f1.pack(side='left' , anchor="n" , padx=18)
+cf2_f1.pack_propagate(0)
+label = Label( cf2_f1, text = "ADD TO STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label( cf2_f1,  image= photo_1 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+cf2_buton = Button(cf2_f1,bd=0.5,text='ADD TO STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1 , command=add_stock)
+cf2_buton.pack( pady= 0,anchor="n")
+
+cf2_f2 = Frame(centerframe_2,width=250, height= 400, bg="#89CFF0")
+cf2_f2.pack(side='left' , anchor="n" , padx=18)
+cf2_f2.pack_propagate(0)
+label = Label( cf2_f2, text = "ADD TO SHOP", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label( cf2_f2,  image= photo_2 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf2_f2 ,bd=0.5,text='ADD TO SHOP' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1 , command=add_to_shop )
+buton.pack( pady= 0,anchor="n")
+
+cf2_f3 = Frame(centerframe_2,width=250, height= 400, bg="#89CFF0")
+cf2_f3.pack(side='left' , anchor="n" , padx=18)
+cf2_f3.pack_propagate(0)
+label = Label( cf2_f3, text = "CHECK SHOP", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label( cf2_f3,  image= photo_3 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf2_f3 ,bd=0.5,text='CHECK SHOP' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1  , command=check_stock)
+buton.pack( pady= 0,anchor="n")
+
+
+cf2_f4 = Frame(centerframe_2,width=250, height= 400, bg="#89CFF0")
+cf2_f4.pack(side='left' , anchor="n" ,padx=18)
+cf2_f4.pack_propagate(0)
+label = Label(cf2_f4, text = "CHECK STOCK", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label( cf2_f4,  image= photo_4 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf2_f4 ,bd=0.5,text='CHECK STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1 , command=show_ledgr)
+buton.pack( pady= 0,anchor="n")
+
+
+
+
+#centerframe 3
+
+cf_3  = centerframe_3  = Frame(root,width=1200, height= 250, bg="#00bfff")
+centerframe_3.pack(side='top' , anchor="n" , padx=0)
+centerframe_3.pack_propagate(0)
+
+
+cf3_f1 = Frame(centerframe_3,width=250, height= 400, bg="#89CFF0")
+cf3_f1.pack(side='left' , anchor="n" , padx=18)
+cf3_f1.pack_propagate(0)
+label = Label(cf3_f1, text = "LEGDER", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label(cf3_f1,  image= photo_5 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf3_f1  ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  command=show_Diary)
+buton.pack( pady= 0,anchor="n")
+
+cf3_f2 = Frame(centerframe_3,width=250, height= 400, bg="#89CFF0")
+cf3_f2.pack(side='left' , anchor="n" , padx=18)
+cf3_f2.pack_propagate(0)
+label = Label(cf3_f2, text = "DIARY'", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label(cf3_f2,  image= photo_6 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf3_f2  ,bd=0.5,text='DIARY' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1  , command=show_Diary)
+buton.pack( pady= 0,anchor="n")
+
+cf3_f3 = Frame(centerframe_3,width=250, height= 400, bg="#89CFF0")
+cf3_f3.pack(side='left' , anchor="n" , padx=18)
+cf3_f3.pack_propagate(0)
+label = Label(cf3_f3, text = "COUNTER", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label(cf3_f3,  image= photo_7 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf3_f3   ,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1 , command=show_counter)
+buton.pack( pady= 0,anchor="n")
+
+cf3_f4 = Frame(centerframe_3,width=250, height= 400, bg="#89CFF0")
+cf3_f4.pack(side='left' , anchor="n" , padx=18)
+cf3_f4.pack_propagate(0)
+label = Label(cf3_f4, text = "BILLING", relief=RAISED , bg= '#89CFF0' , bd=0 , font=labelFont , fg='white' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+label = Label(cf3_f4,  image= photo_8 , bg= '#89CFF0' )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(cf3_f4 ,bd=0.5,text='VIEW STOCK' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 ,  height= 1 , command= show_Billing)
+buton.pack( pady= 0,anchor="n")
+
+
+
+
+#add to stock 
+
+ad_stock = add_stock = Frame(root,width=1300, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+add_stock.pack(side='top' , anchor="n" , pady=40 , padx=30)
+add_stock.pack_propagate(0)
+
+entry_area =Frame(add_stock,width=1000, height= 580, bg="yellow" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+entry_area.pack(side='left' , anchor="n" , padx=20)
+label_1_ad_stock = Label(entry_area, text = "PART NO", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_1_ad_stock.grid(row = 1 , column = 1 , pady=14 , padx=14)
+entry_1_ad_stock = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_1_ad_stock.grid(row= 2, column=1  , padx=14 )
+label_2_ad_stock = Label(entry_area, text = "NAME", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_2_ad_stock.grid(row = 1 , column = 2 , pady=14 , padx=14)
+entry_2_ad_stock  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_2_ad_stock.grid(row= 2, column=2 , padx=14  )
+label_3_ad_stock = Label(entry_area, text = "MODEL", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_3_ad_stock.grid(row = 1 , column = 3 , pady=14 , padx=14 )
+entry_3_ad_stock  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_3_ad_stock .grid(row= 2, column=3 , padx=14)
+label_4_ad_stock = Label(entry_area, text = "ENGINE", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_4_ad_stock.grid(row = 1 , column = 4 , pady=14  , padx=14 )
+entry_4_ad_stock  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_4_ad_stock .grid(row= 2, column=4 , padx=14 )
+label_5_ad_stock = Label(entry_area, text = "BRAND", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_5_ad_stock.grid(row = 1, column = 5 , pady=14 , padx=14)
+entry_5_ad_stock  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_5_ad_stock .grid(row= 2, column=5 , padx=14 , pady=14)
+label_6_ad_stock = Label(entry_area, text = "Price", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_6_ad_stock.grid(row = 1, column = 6 , pady=14 , padx=14)
+entry_6_ad_stock  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_6_ad_stock .grid(row= 2, column= 6  , padx=14  , pady=14  )
+button_ad_stock = Button(entry_area ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+button_ad_stock.grid( row= 7 , column=2 )
+ad_stock.pack_forget()
+
+
+
+#add to shop
+
+ad_shop = add_shop = Frame(root,width=1300, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+add_shop.pack(side='top' , anchor="n" , padx=0)
+add_shop.pack_propagate(0)
+
+ad_shop_entry_area =Frame(ad_shop,width=1000, height= 580, bg="blue" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+ad_shop_entry_area.pack(side='left' , anchor="n" , padx=20)
+label_1_ad_shop = Label(ad_shop_entry_area, text = "PART NO", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_1_ad_shop.grid(row = 1 , column = 1 , pady=14 , padx=14)
+entry_1_ad_shop = Entry(ad_shop_entry_area, width=12, fg='black',font=('Arial',16,'bold') )
+entry_1_ad_shop.grid(row= 2, column=1  , padx=14 )
+label_2_ad_shop = Label(ad_shop_entry_area, text = "NAME", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_2_ad_shop.grid(row = 1 , column = 2 , pady=14 , padx=14)
+entry_2_ad_shop  = Entry(ad_shop_entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_2_ad_shop.grid(row= 2, column=2 , padx=14  )
+label_3_ad_shop = Label(ad_shop_entry_area, text = "MODEL", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_3_ad_shop.grid(row = 1 , column = 3 , pady=14 , padx=14 )
+entry_3_ad_shop  = Entry(ad_shop_entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_3_ad_shop.grid(row= 2, column=3 , padx=14)
+label_4_ad_shop = Label(ad_shop_entry_area, text = "ENGINE", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_4_ad_shop.grid(row = 1 , column = 4 , pady=14  , padx=14 )
+entry_4_ad_shop  = Entry(ad_shop_entry_area, width=12, fg='black',font=('Arial',16,'bold') )
+entry_4_ad_shop.grid(row= 2, column=4 , padx=14 )
+label_5_ad_shop = Label(ad_shop_entry_area, text = "BRAND", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_5_ad_shop.grid(row = 1, column = 5 , pady=14 , padx=14)
+entry_5_ad_shop  = Entry(ad_shop_entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_5_ad_shop.grid(row= 2, column=5 , padx=14 , pady=14)
+label_6_ad_shop = Label(ad_shop_entry_area, text = "Price", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_6_ad_shop.grid(row = 1, column = 6 , pady=14 , padx=14)
+entry_6_ad_shop = Entry(ad_shop_entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_6_ad_shop .grid(row= 2, column= 6  , padx=14  , pady=14  )
+button_ad_shop = Button(ad_shop_entry_area ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+button_ad_shop.grid( row= 7 , column=2 )
+add_shop.pack_forget()
+
+#ADD TO LEDGER 
+
+ad_LEDGER = add_LEDGER = Frame(root,width=1300, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+add_LEDGER.pack(side='top' , anchor="n" , pady=40 , padx=30)
+add_LEDGER.pack_propagate(0)
+
+entry_area =Frame(add_LEDGER,width=1000, height= 580, bg="green" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+entry_area.pack(side='left' , anchor="n" , padx=20)
+label_1_ad_LEDGER = Label(entry_area, text = "PART NO", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_1_ad_LEDGER.grid(row = 1 , column = 1 , pady=14 , padx=14)
+entry_1_ad_LEDGER = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_1_ad_LEDGER.grid(row= 2, column=1  , padx=14 )
+label_2_ad_LEDGER = Label(entry_area, text = "NAME", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_2_ad_LEDGER.grid(row = 1 , column = 2 , pady=14 , padx=14)
+entry_2_ad_LEDGER  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_2_ad_LEDGER.grid(row= 2, column=2 , padx=14  )
+label_3_ad_LEDGER = Label(entry_area, text = "MODEL", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_3_ad_LEDGER.grid(row = 1 , column = 3 , pady=14 , padx=14 )
+entry_3_ad_LEDGER  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_3_ad_LEDGER .grid(row= 2, column=3 , padx=14)
+label_4_ad_LEDGER = Label(entry_area, text = "ENGINE", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_4_ad_LEDGER.grid(row = 1 , column = 4 , pady=14  , padx=14 )
+entry_4_ad_LEDGER  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_4_ad_LEDGER .grid(row= 2, column=4 , padx=14 )
+label_5_ad_LEDGER = Label(entry_area, text = "BRAND", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_5_ad_LEDGER.grid(row = 1, column = 5 , pady=14 , padx=14)
+entry_5_ad_LEDGER  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_5_ad_LEDGER.grid(row= 2, column=5 , padx=14 , pady=14)
+label_6_ad_LEDGER = Label(entry_area, text = "Price", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_6_ad_LEDGER.grid(row = 1, column = 6 , pady=14 , padx=14)
+entry_6_ad_LEDGER = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_6_ad_LEDGER .grid(row= 2, column= 6  , padx=14  , pady=14  )
+button_ad_LEDGER= Button(entry_area ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+button_ad_LEDGER.grid( row= 7 , column=2 )
+ad_LEDGER.pack_forget()
+
+'''
+
+#ADD TO DIARY 
+
+ad_DIARY = add_DIARY = Frame(root,width=1300, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+add_DIARY.pack(side='top' , anchor="n" , pady=40 , padx=30)
+add_DIARY.pack_propagate(0)
+
+entry_area =Frame(add_DIARY,width=1000, height= 580, bg="brown" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+entry_area.pack(side='left' , anchor="n" , padx=20)
+label_1_ad_DIARY = Label(entry_area, text = "PART NO", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_1_ad_DIARY.grid(row = 1 , column = 1 , pady=14 , padx=14)
+entry_1_ad_DIARY = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_1_ad_DIARY.grid(row= 2, column=1  , padx=14 )
+label_2_ad_DIARY = Label(entry_area, text = "NAME", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_2_ad_DIARY.grid(row = 1 , column = 2 , pady=14 , padx=14)
+entry_2_ad_DIARY  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_2_ad_DIARY.grid(row= 2, column=2 , padx=14  )
+label_3_ad_DIARY = Label(entry_area, text = "MODEL", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_3_ad_DIARY.grid(row = 1 , column = 3 , pady=14 , padx=14 )
+entry_3_ad_DIARY = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_3_ad_DIARY .grid(row= 2, column=3 , padx=14)
+label_4_ad_DIARY = Label(entry_area, text = "ENGINE", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_4_ad_DIARY.grid(row = 1 , column = 4 , pady=14  , padx=14 )
+entry_4_ad_DIARY  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_4_ad_DIARY.grid(row= 2, column=4 , padx=14 )
+label_5_ad_DIARY= Label(entry_area, text = "BRAND", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_5_ad_DIARY.grid(row = 1, column = 5 , pady=14 , padx=14)
+entry_5_ad_DIARY  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_5_ad_DIARY.grid(row= 2, column=5 , padx=14 , pady=14)
+label_6_ad_DIARY = Label(entry_area, text = "Price", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_6_ad_DIARY.grid(row = 1, column = 6 , pady=14 , padx=14)
+entry_6_ad_DIARY = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_6_ad_DIARY.grid(row= 2, column= 6  , padx=14  , pady=14  )
+button_ad_DIARY= Button(entry_area ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+button_ad_DIARY.grid( row= 7 , column=2 )
+add_DIARY.pack_forget()
+'''
+
+
+#transfer_transction 
+
+transfer_transction = transfer_transction  = Frame(root,width=1300, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+transfer_transction .pack(side='top' , anchor="n" , pady=40 , padx=30)
+transfer_transction .pack_propagate(0)
+
+entry_area =Frame(transfer_transction ,width=1000, height= 580, bg="grey" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+entry_area.pack(side='left' , anchor="n" , padx=20)
+label_1_transfer_transction  = Label(entry_area, text = "PART NO", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_1_transfer_transction .grid(row = 1 , column = 1 , pady=14 , padx=14)
+entry_1_transfer_transction  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_1_transfer_transction .grid(row= 2, column=1  , padx=14 )
+label_2_transfer_transction  = Label(entry_area, text = "NAME", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_2_transfer_transction .grid(row = 1 , column = 2 , pady=14 , padx=14)
+entry_2_transfer_transction  = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_2_transfer_transction .grid(row= 2, column=2 , padx=14  )
+label_3_transfer_transction = Label(entry_area, text = "MODEL", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_3_transfer_transction .grid(row = 1 , column = 3 , pady=14 , padx=14 )
+entry_3_transfer_transction = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_3_transfer_transction .grid(row= 2, column=3 , padx=14)
+label_4_transfer_transction  = Label(entry_area, text = "ENGINE", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_4_transfer_transction .grid(row = 1 , column = 4 , pady=14  , padx=14 )
+entry_4_transfer_transction   = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_4_transfer_transction .grid(row= 2, column=4 , padx=14 )
+label_5_transfer_transction = Label(entry_area, text = "BRAND", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_5_transfer_transction .grid(row = 1, column = 5 , pady=14 , padx=14)
+entry_5_transfer_transction   = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_5_transfer_transction .grid(row= 2, column=5 , padx=14 , pady=14)
+label_6_transfer_transction  = Label(entry_area, text = "Price", relief=RAISED , bg= '#89CFF0' , bd=0  , font=label_Entry_font )
+label_6_transfer_transction .grid(row = 1, column = 6 , pady=14 , padx=14)
+entry_6_transfer_transction = Entry(entry_area , width=12, fg='black',font=('Arial',16,'bold') )
+entry_6_transfer_transction .grid(row= 2, column= 6  , padx=14  , pady=14  )
+button_transfer_transction = Button(entry_area ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+button_transfer_transction .grid( row= 7 , column=2 )
+
+transfer_transction.pack_forget()
+
+
+#CUSTOMER_DETAILS
+
+chk_CUSTOMER = check_CUSTOMER = Frame(root,width=1420, height= 680, bg="white" )
+check_CUSTOMER.pack(side='top' , anchor="n" , padx=0)
+check_CUSTOMER.pack_propagate(0)
+
+CUSTOMER_label_Area = Frame(check_CUSTOMER,width=600, height= 70, bg="white" )
+CUSTOMER_label_Area.pack(side='top' , anchor="ne" , padx=0 , pady= 10)
+ 
+CUSTOMER_table_Area = Frame(check_CUSTOMER,width=1000, height= 590, bg="white" )
+CUSTOMER_table_Area.pack(side='right' , anchor="n" , padx=10 , pady= 10)
+CUSTOMER_button_area = Frame(check_CUSTOMER,width=350, height= 580, bg="white" )
+CUSTOMER_button_area.pack(side='left' , anchor="n" , padx=20 , pady= 0)
+
+
+
+label = Label(CUSTOMER_button_area, text = "SEARCH PRODUCT", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=5, padx=5 )
+entry = Entry(CUSTOMER_button_area, width=22 ,  fg='black'  ,highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',13,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(CUSTOMER_button_area  ,bd=0.5,text='SEARCH' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 15,anchor="n")
+
+label = Label(CUSTOMER_button_area, text = "ADD PRODUCT", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=10, padx=5 )
+entry = Entry(CUSTOMER_button_area, width=11, fg='black',highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(CUSTOMER_button_area  ,bd=0.5,text='ADD PRODUCT' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+label = Label(CUSTOMER_button_area, text = "ADD UNIT", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=10, padx=5 )
+entry = Entry(CUSTOMER_button_area, width=11, fg='black',highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(CUSTOMER_button_area  ,bd=0.5,text='ADD UNIT' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+label = Label(CUSTOMER_button_area, text = "ADD NAME", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=10, padx=5 )
+entry = Entry(CUSTOMER_button_area, width=11, fg='black',highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(CUSTOMER_button_area  ,bd=0.5,text='ADD NAME' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+label = Label(CUSTOMER_button_area, text = "ADD PHONE", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=10, padx=5 )
+entry = Entry(CUSTOMER_button_area, width=11, fg='black',highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(CUSTOMER_button_area  ,bd=0.5,text='ADD PHONE' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+label = Label(CUSTOMER_label_Area , text = "COUNTER", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 14 , "bold")  )
+label.pack(side='left' , anchor="w" , pady=5, padx=255 )
+
+label = Label(CUSTOMER_label_Area , text = "PRODUCTS ADDED", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='left' , anchor="n" , pady=5, padx=5 )
+entry = Entry(CUSTOMER_label_Area ,width=8,  highlightthickness=0.5 , highlightbackground="black", fg='black',font=('Arial',16,'bold') )
+entry.pack(side='left' , pady= 0, padx=5,anchor="n")
+entry.insert(END, "0")
+
+label = Label(CUSTOMER_label_Area , text = "TOTAL BILL", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='left' , anchor="n" , pady=5, padx=5 )
+entry = Entry(CUSTOMER_label_Area , width=8, highlightthickness=0.5 , highlightbackground="black", fg='black',font=('Arial',16,'bold') )
+entry.pack(side='left' , pady= 0, padx=15,anchor="n")
+entry.insert(END, "200")
+
+
+
+
+
+CUSTOMER_items = [("COUNTER" , "ALPHA" , "BEta" , "Gama"  ,"sigma"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma"  )]
+                                                                 
+CUSTOMER_head = ["NAME" , "PHONE" , "PRODUCT BOUGH" , " UNIT BOUGHT" , "id" ]
+
+for i in range(5):
+    b = Entry(CUSTOMER_table_Area, width=12, fg='black',font=('Arial',12,'bold') )
+    b.grid(row=0, column=i , pady=10)
+    b.insert(END ,  CUSTOMER_head[i])    
+
+for i in range(17):
+    for j in range(5):
+        c = Entry(CUSTOMER_table_Area, width=12,  fg='black',font=('Arial',12,'bold') )
+        c.grid( row=i+1, column=j , pady=2)
+        c.insert(END, CUSTOMER_items[i][j])
+
+check_CUSTOMER.pack_forget()
+
+
+
+
+#check shop 
+
+chk_shop = check_shop = Frame(root,width=950, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_shop.pack(side='top' , anchor="n" , padx=0)
+check_shop.pack_propagate(0)
+shop_table_Area = Frame(check_shop,width=1000, height= 580, bg="yellow" ,highlightthickness=0.5 , highlightbackground="blue")
+shop_table_Area.pack(side='left' , anchor="n" , padx=0)
+shop_button_area = Frame(check_shop,width=400, height= 580, bg="white" ,highlightthickness=0.5 , highlightbackground="blue")
+shop_button_area.pack(side='left' , anchor="w" , padx=20)
+label = Label(shop_button_area, text = "LEGDER", relief=RAISED , bg= '#89CFF0' , bd=0  )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(shop_button_area  ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=24 )
+buton.pack( pady= 0,anchor="n")
+buton = Button(shop_button_area  ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12  )
+buton.pack( pady= 0,anchor="n")
+entry = Entry(shop_button_area, width=12, fg='black',font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+
+shop_items = [("060043" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200000"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),]
+                                                                 
+shop_head = ["part no" , "NAme" , "Engine" , "Brand" , "Made" , "price"]
+
+for i in range(6):
+    b = Entry(shop_table_Area, width=12, fg='black',font=('Arial',16,'bold') )
+    b.grid(row=0, column=i , pady=10)
+    b.insert(END ,  shop_head[i])    
+
+for i in range(17):
+    for j in range(6):
+        c = Entry(shop_table_Area, width=12,  fg='black',font=('Arial',16,'bold') )
+        c.grid( row=i+1, column=j , pady=2)
+        c.insert(END,  shop_items[i][j])
+
+check_shop.pack_forget()
+
+
+
+#check stock 
+
+chk_stock= check_stock = Frame(root,width=1120, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_stock.pack(side='top' , anchor="n" , padx=0)
+check_stock.pack_propagate(0)
+
+stock_table_Area = Frame(root,width=1000, height= 580, bg="yellow" ,highlightthickness=0.5 , highlightbackground="blue")
+stock_table_Area.pack(side='right' , anchor="n" , padx=0)
+stock_button_area = Frame(root,width=200, height= 580, bg="white" ,highlightthickness=0.5 , highlightbackground="blue")
+stock_button_area.pack(side='left' , anchor="n" , padx=20)
+label = Label(stock_button_area, text = "LEGDER", relief=RAISED , bg= '#89CFF0' , bd=0  )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(stock_button_area  ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 0,anchor="n")
+buton = Button(stock_button_area  ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 0,anchor="n")
+entry = Entry(stock_button_area, width=12, fg='black',font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+
+Stock_items = [("86443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200077"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083"),]
+                                                                 
+stock_head = ["part no" , "NAme" , "Engine" , "Brand" , "Made" , "price"]
+
+for i in range(6):
+    b = Entry(stock_table_Area, width=12, fg='black',font=('Arial',16,'bold') )
+    b.grid(row=0, column=i , pady=10)
+    b.insert(END ,  stock_head[i])    
+
+for i in range(17):
+    for j in range(6):
+        c = Entry(stock_table_Area, width=12,  fg='black',font=('Arial',16,'bold') )
+        c.grid( row=i+1, column=j , pady=2)
+        c.insert(END,  Stock_items[i][j])
+
+check_stock.pack_forget()
+
+
+
+
+#CHECK Ledger 
+
+chk_Ledger = check_Ledger = Frame(root,width=1400, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_Ledger.pack(side='top' , anchor="n" , padx=0)
+check_Ledger.pack_propagate(0)
+
+
+Ledger_table_Area = Frame(check_Ledger,width=1000, height= 580, bg="grey" ,highlightthickness=0.5 , highlightbackground="blue")
+Ledger_table_Area.pack(side='right' , anchor="n" , padx=0)
+Ledger_button_area = Frame(check_Ledger,width=200, height= 580, bg="white" ,highlightthickness=0.5 , highlightbackground="blue")
+Ledger_button_area.pack(side='left' , anchor="n" , padx=20)
+label = Label(Ledger_button_area, text = "LEGDER", relief=RAISED , bg= '#89CFF0' , bd=0  )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(Ledger_button_area  ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 0,anchor="n")
+buton = Button(Ledger_button_area  ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 0,anchor="n")
+entry = Entry(Ledger_button_area, width=12, fg='black',font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+
+Ledger_items = [("12313" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200077" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),]
+                                                                 
+Ledger_head = ["S/n" , "LEDGER NO" , "NAME" , "ADRESS" , "COUNTRY" , "PHONE" , "Class"]
+
+for i in range(7):
+    b = Entry(Ledger_table_Area, width=12, fg='black',font=('Arial',16,'bold') )
+    b.grid(row=0, column=i , pady=10)
+    b.insert(END ,  Ledger_head[i])    
+
+for i in range(17):
+    for j in range(7):
+        c = Entry(Ledger_table_Area, width=12,  fg='black',font=('Arial',16,'bold') )
+        c.grid( row=i+1, column=j , pady=2)
+        c.insert(END,  Ledger_items[i][j])
+
+check_Ledger.pack_forget()
+
+
+#CHECK_Diary
+
+chk_Diary= check_Diary = Frame(root,width=1120, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_Diary.pack(side='top' , anchor="n" , padx=0)
+check_Diary.pack_propagate(0)
+
+
+Diary_table_Area = Frame(check_Diary,width=1000, height= 580, bg="grey" ,highlightthickness=0.5 , highlightbackground="blue")
+Diary_table_Area.pack(side='right' , anchor="n" , padx=0)
+Diary_button_area = Frame(check_Diary,width=200, height= 580, bg="white" ,highlightthickness=0.5 , highlightbackground="blue")
+Diary_button_area.pack(side='left' , anchor="n" , padx=20)
+label = Label(Diary_button_area, text = "LEGDER", relief=RAISED , bg= '#89CFF0' , bd=0  )
+label.pack(side='top' , anchor="n" , pady=10, padx=20 )
+buton = Button(Diary_button_area  ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 0,anchor="n")
+buton = Button(Diary_button_area  ,bd=0.5,text='LEGDER' , bg='#00bfff', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 0,anchor="n")
+entry = Entry(Diary_button_area, width=12, fg='black',font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+
+Diary_items = [("12313" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200077" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),]
+                                                                 
+Diary_head = ["S/n" , "LEDGER NO" , "NAME" , "ADRESS" , "COUNTRY" , "PHONE" , "Class"]
+
+for i in range(7):
+    b = Entry(Diary_table_Area, width=12, fg='black',font=('Arial',16,'bold') )
+    b.grid(row=0, column=i , pady=10)
+    b.insert(END ,  Diary_head[i])    
+
+for i in range(17):
+    for j in range(7):
+        c = Entry(Diary_table_Area, width=12,  fg='black',font=('Arial',16,'bold') )
+        c.grid( row=i+1, column=j , pady=2)
+        c.insert(END,  Diary_items[i][j])
+
+check_Diary.pack_forget()
+
+
+
+#counter
+
+chk_counter = check_counter = Frame(root,width=1420, height= 680, bg="white" )
+check_counter.pack(side='top' , anchor="n" , padx=0)
+check_counter.pack_propagate(0)
+
+counter_label_Area = Frame(check_counter,width=600, height= 70, bg="white" )
+counter_label_Area.pack(side='top' , anchor="ne" , padx=0 , pady= 10)
+ 
+counter_table_Area = Frame(check_counter,width=1000, height= 590, bg="white" )
+counter_table_Area.pack(side='right' , anchor="n" , padx=10 , pady= 10)
+counter_button_area = Frame(check_counter,width=350, height= 580, bg="white" )
+counter_button_area.pack(side='left' , anchor="n" , padx=20 , pady= 0)
+
+
+
+label = Label(counter_button_area, text = "SEARCH PRODUCT", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=5, padx=5 )
+entry = Entry(counter_button_area, width=22 ,  fg='black'  ,highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',13,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(counter_button_area  ,bd=0.5,text='SEARCH' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 15,anchor="n")
+
+label = Label(counter_button_area, text = "ADD PRODUCT", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=10, padx=5 )
+entry = Entry(counter_button_area, width=11, fg='black',highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(counter_button_area  ,bd=0.5,text='ADD PRODUCT' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+label = Label(counter_button_area, text = "ADD UNIT", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=10, padx=5 )
+entry = Entry(counter_button_area, width=11, fg='black',highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(counter_button_area  ,bd=0.5,text='ADD UNIT' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+label = Label(counter_button_area, text = "ADD NAME", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=10, padx=5 )
+entry = Entry(counter_button_area, width=11, fg='black',highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(counter_button_area  ,bd=0.5,text='ADD NAME' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+label = Label(counter_button_area, text = "ADD PHONE", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=10, padx=5 )
+entry = Entry(counter_button_area, width=11, fg='black',highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(counter_button_area  ,bd=0.5,text='ADD PHONE' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+label = Label(counter_label_Area , text = "COUNTER", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 14 , "bold")  )
+label.pack(side='left' , anchor="w" , pady=5, padx=255 )
+
+label = Label(counter_label_Area , text = "PRODUCTS ADDED", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='left' , anchor="n" , pady=5, padx=5 )
+entry = Entry(counter_label_Area ,width=8,  highlightthickness=0.5 , highlightbackground="black", fg='black',font=('Arial',16,'bold') )
+entry.pack(side='left' , pady= 0, padx=5,anchor="n")
+entry.insert(END, "0")
+
+label = Label(counter_label_Area , text = "TOTAL BILL", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='left' , anchor="n" , pady=5, padx=5 )
+entry = Entry(counter_label_Area , width=8, highlightthickness=0.5 , highlightbackground="black", fg='black',font=('Arial',16,'bold') )
+entry.pack(side='left' , pady= 0, padx=15,anchor="n")
+entry.insert(END, "200")
+
+
+
+
+
+counter_items = [("COUNTER" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200077" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),]
+                                                                 
+counter_head = ["S/n" , "LEDGER NO" , "NAME" , "ADRESS" , "COUNTRY" , "PHONE" , "Class"]
+
+for i in range(7):
+    b = Entry(counter_table_Area, width=12, fg='black',font=('Arial',12,'bold') )
+    b.grid(row=0, column=i , pady=10)
+    b.insert(END ,  counter_head[i])    
+
+for i in range(17):
+    for j in range(7):
+        c = Entry(counter_table_Area, width=12,  fg='black',font=('Arial',12,'bold') )
+        c.grid( row=i+1, column=j , pady=2)
+        c.insert(END, counter_items[i][j])
+
+check_counter.pack_forget()
+
+#Billing'
+
+
+
+chk_Billing = check_Billing = Frame(root,width=950, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_Billing.pack(side='top' , anchor="n" , padx=0)
+check_Billing.pack_propagate(0)
+
+
+Billing_label_Area = Frame(check_Billing,width=600, height= 70, bg="white" )
+Billing_label_Area.pack(side='top' , anchor="ne" , padx=0 , pady= 10)
+
+Billing_table_Area = Frame(check_Billing ,width=1000, height= 590, bg="white" )
+Billing_table_Area.pack(side='right' , anchor="n" , padx=10 , pady= 10)
+
+label = Label(Billing_table_Area, text = "PREVIOUS RECORD", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.grid(row = 1,  column = 1 , padx = 20)
+entry = Entry(Billing_table_Area, width=22 ,  fg='black'  ,highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',13,'bold') )
+entry.grid(row = 1 ,  column = 2)
+
+label = Label(Billing_table_Area, text = "NAME OF CUSTOMER", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.grid(row = 2,  column = 1 , padx = 20)
+entry = Entry(Billing_table_Area, width=22 ,  fg='black'  ,highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',13,'bold') )
+entry.grid(row = 2 ,  column = 2)
+
+label = Label(Billing_table_Area, text = "product", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.grid(row = 3,  column = 1 , padx = 20)
+entry = Entry(Billing_table_Area, width=22 ,  fg='black'  ,highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',13,'bold') )
+entry.grid(row = 3 ,  column = 2)
+
+label = Label(Billing_table_Area, text = "Taxes", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.grid(row = 4,  column = 1 , padx = 20)
+entry = Entry(Billing_table_Area, width=22 ,  fg='black'  ,highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',13,'bold') )
+entry.grid(row = 4 ,  column = 2)
+
+label = Label(Billing_table_Area, text = "Total Bill", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.grid(row = 5,  column = 1 , padx = 20)
+entry = Entry(Billing_table_Area, width=22 ,  fg='black'  ,highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',13,'bold') )
+entry.grid(row = 5 ,  column = 2)
+
+check_Billing.pack_forget()
+
+
+
+
+
+# return_products
+
+retrn_products = return_products = Frame(root,width=950, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+return_products.pack(side='top' , anchor="n" , padx=0)
+return_products.pack_propagate(0)
+
+
+retrn_label_Area = Frame(return_products,width=600, height= 70, bg="white" )
+retrn_label_Area.pack(side='top' , anchor="ne" , padx=0 , pady= 10)
+ 
+retrn_table_Area = Frame(return_products,width=1000, height= 590, bg="white" )
+retrn_table_Area.pack(side='right' , anchor="n" , padx=10 , pady= 10)
+retrn_button_area = Frame(return_products,width=350, height= 580, bg="white" )
+retrn_button_area.pack(side='left' , anchor="n" , padx=20 , pady= 0)
+
+label = Label(retrn_button_area, text = "PRODUCT ID", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=5, padx=5 )
+entry = Entry(retrn_button_area, width=22 ,  fg='black'  ,highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',13,'bold') )
+entry.pack(pady= 0,anchor="n")
+
+
+label = Label(retrn_button_area, text = "CUSTOMER NAME", relief=RAISED , bg= 'white' , bd=0, font=("Arial", 10 , "bold")  )
+label.pack(side='top' , anchor="n" , pady=10, padx=5 )
+entry = Entry(retrn_button_area, width=11, fg='black',highlightthickness=0.5 , highlightbackground="black" ,font=('Arial',16,'bold') )
+entry.pack(pady= 0,anchor="n")
+buton = Button(retrn_button_area  ,bd=0.5,text='Return' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+buton = Button(retrn_button_area  ,bd=0.5,text='CHECK Returns' , bg='blue', fg='white'  , font=buttonFont,  width=12 )
+buton.pack( pady= 10,anchor="n")
+
+
+retrn_items = [("COUNTER" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200077" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"), 
+               ("23443" , "ALPHA" , "BEta" , "Gama"  ,"sigma" ,  "200083" ,  "CUSTOMER"),]
+                                                                 
+retrn_head = ["S/n" , "LEDGER NO" , "NAME" , "ADRESS" , "COUNTRY" , "PHONE" , "Class"]
+
+for i in range(7):
+    b = Entry(retrn_table_Area, width=12, fg='black',font=('Arial',12,'bold') )
+    b.grid(row=0, column=i , pady=10)
+    b.insert(END ,  retrn_head[i])    
+
+for i in range(17):
+    for j in range(7):
+        c = Entry(retrn_table_Area, width=12,  fg='black',font=('Arial',12,'bold') )
+        c.grid( row=i+1, column=j , pady=2)
+        c.insert(END, retrn_items[i][j])
+
+return_products.pack_forget()       
+
+
+class Window(Frame):
+    def __init__(self, master=None):
+        Frame.__init__(self, master)
+        self.master = master
+
+        menu = Menu(self.master)
+        self.master.config(menu=menu)
+
+        fileMenu = Menu(menu)
+        fileMenu.add_command(label="Item")
+        fileMenu.add_command(label="Exit", command=self.exitProgram)
+        menu.add_cascade(label="File", menu=fileMenu)
+
+        editMenu = Menu(menu)
+        editMenu.add_command(label="Undo")
+        editMenu.add_command(label="Redo")
+        menu.add_cascade(label="Edit", menu=editMenu)
+
+    def exitProgram(self):
+        exit()
+        
+
+
+app = Window(root)
+
+root.mainloop()

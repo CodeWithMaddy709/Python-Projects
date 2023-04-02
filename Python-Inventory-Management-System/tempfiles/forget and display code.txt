@@ -1,0 +1,91 @@
+centerframe_1.pack_forgrt()
+centerframe_1.pack(side='top' , anchor="n" , pady=0)
+centerframe_1.pack_propagate(0)
+
+cf_2 .pack_forget()
+centerframe_2.pack(side='top' , anchor="n" , pady=20)
+centerframe_2.pack_propagate(0)
+
+centerframe_3.pack_forget()
+centerframe_3.pack(side='top' , anchor="n" , padx=0)
+centerframe_3.pack_propagate(0)
+
+
+add_stock.pack_forget()
+add_stock.pack(side='top' , anchor="n" , pady=40 , padx=30)
+add_stock.pack_propagate(0)
+
+add_shop.pack_forget()
+add_shop.pack(side='top' , anchor="n" , padx=0)
+add_shop.pack_propagate(0)
+
+
+add_LEDGER.pack_forget()
+add_LEDGER.pack(side='top' , anchor="n" , pady=40 , padx=30)
+add_LEDGER.pack_propagate(0)
+
+
+add_DIARY.pack_forget()
+add_DIARY.pack(side='top' , anchor="n" , pady=40 , padx=30)
+add_DIARY.pack_propagate(0)
+
+
+transfer_transction.pack_forget()
+transfer_transction .pack(side='top' , anchor="n" , pady=40 , padx=30)
+transfer_transction .pack_propagate(0)
+
+
+
+check_CUSTOMER.pack_forget()
+check_CUSTOMER.pack(side='top' , anchor="n" , padx=0)
+check_CUSTOMER.pack_propagate(0)
+
+
+
+check_shop.pack_forget()
+check_shop.pack(side='top' , anchor="n" , padx=0)
+check_shop.pack_propagate(0)
+
+
+check_stock.pack_forget()
+chk_stock= check_stock = Frame(root,width=1120, height= 580, bg="#00bfff" ,highlightthickness=0.5 , highlightbackground="#00bfff")
+check_stock.pack(side='top' , anchor="n" , padx=0)
+check_stock.pack_propagate(0)
+
+
+check_Ledger.pack_forget()
+check_Ledger.pack(side='top' , anchor="n" , padx=0)
+check_Ledger.pack_propagate(0)
+
+
+check_Diary.pack_forget()
+check_Diary.pack(side='top' , anchor="n" , padx=0)
+check_Diary.pack_propagate(0)
+
+
+
+check_counter.pack_forget()
+check_counter.pack(side='top' , anchor="n" , padx=0)
+check_counter.pack_propagate(0)
+
+
+
+check_Billing.pack_forget()
+check_Billing.pack(side='top' , anchor="n" , padx=0)
+check_Billing.pack_propagate(0)
+
+
+
+
+return_products.pack_forget()
+return_products.pack(side='top' , anchor="n" , padx=0)
+return_products.pack_propagate(0)
+
+
+
+
+
+
+
+
+
